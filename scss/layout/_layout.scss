@@ -16,7 +16,7 @@ body {
             font-size: 1.5rem;
             height: 7rem;
             background-color: #fff;
-            border-bottom: $color-grey-light-2 1px solid;
+            border-bottom: $border;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -45,6 +45,28 @@ body {
         justify-content: center;
         align-items: center;
     }
+
+    .detail {
+        display: flex;
+        padding: 4.5rem;
+        background-color: $color-grey-light-1;
+        border-bottom: $border;
+    }
+
+    .description {
+        flex: 0 0 60%;
+        font-size: 1.4rem;
+        margin-right: 4.5rem;
+        background-color: #fff;
+        box-shadow: $shadow-light;
+        padding: 3rem;
+    }
+
+    .user-reviews {
+        flex: 1;
+        background-color: yellowgreen;
+    }
+
 }
 
 

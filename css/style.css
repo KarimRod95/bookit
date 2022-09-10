@@ -2,7 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  list-style: none;
   text-decoration: none; }
 
 *,
@@ -37,7 +36,7 @@ body {
       font-size: 1.5rem;
       height: 7rem;
       background-color: #fff;
-      border-bottom: #f4f2f2 1px solid;
+      border-bottom: 1px solid #f4f2f2;
       display: flex;
       justify-content: space-between;
       align-items: center; }
@@ -56,6 +55,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center; }
+  body .detail {
+    display: flex;
+    padding: 4.5rem;
+    background-color: #faf9f9;
+    border-bottom: 1px solid #f4f2f2; }
+  body .description {
+    flex: 0 0 60%;
+    font-size: 1.4rem;
+    margin-right: 4.5rem;
+    background-color: #fff;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+    padding: 3rem; }
+  body .user-reviews {
+    flex: 1;
+    background-color: yellowgreen; }
 
 .logo {
   height: 3.25rem;
@@ -121,7 +135,8 @@ body {
 
 .side-nav {
   font-size: 1.4rem;
-  margin-top: 3.5rem; }
+  margin-top: 3.5rem;
+  list-style: none; }
   .side-nav__item {
     position: relative; }
     .side-nav__item:not(:last-child) {
@@ -164,7 +179,7 @@ body {
 .overview {
   display: flex;
   align-items: center;
-  border-bottom: #f4f2f2 1px solid; }
+  border-bottom: 1px solid #f4f2f2; }
   .overview__heading {
     font-size: 2.25rem;
     font-weight: 300;
@@ -215,6 +230,30 @@ body {
   .btn-inline:focus {
     outline: none;
     animation: pulsate 1s infinite; }
+
+.paragraph:not(:last-of-type) {
+  margin-bottom: 2rem; }
+
+.list {
+  list-style: none;
+  margin: 3rem 0;
+  padding: 3rem 0;
+  border-top: 1px solid #f4f2f2;
+  border-bottom: 1px solid #f4f2f2;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-mask-size: cover; }
+  .list__item {
+    flex: 0 0 50%;
+    margin-bottom: .7rem; }
+  .list__item::before {
+    content: "";
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    margin-right: .7rem;
+    background-color: #eb2f64;
+    -webkit-mask-image: url(../../img/chevron-thin-right.svg); }
 
 @keyframes pulsate {
   0% {
